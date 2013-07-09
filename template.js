@@ -43,18 +43,18 @@ exports.template = function (grunt, init, done) {
         init.prompt('author_email'),
         init.prompt('author_url'),
         init.prompt('node_version', '>= 0.8.19'),
-        init.prompt('slidesDirectory'),
-        init.prompt('buildDirectory'),
-        init.prompt('assetsDirectory'),
-        init.prompt('cleanBeforeBuild'),
-        init.prompt('slideshowTitle'),
-        init.prompt('theme'),
-        init.prompt('syntaxHlTheme'),
-        init.prompt('controls'),
-        init.prompt('progress'),
-        init.prompt('history'),
-        init.prompt('center'),
-        init.prompt('transition')
+        init.prompt('slidesDirectory', 'slides'),
+        init.prompt('buildDirectory', 'build'),
+        init.prompt('assetsDirectory', 'assets'),
+        init.prompt('cleanBeforeBuild', true),
+        init.prompt('slideshowTitle', 'My Title'),
+        init.prompt('theme', 'default'),
+        init.prompt('syntaxHlTheme', 'zenburn'),
+        init.prompt('controls', true),
+        init.prompt('progress', true),
+        init.prompt('history', true),
+        init.prompt('center', true),
+        init.prompt('transition', 'default')
     ], function (err, props) {
         props.keywords = [];
         props.devDependencies = {
