@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
         reveal: {
 
-            livereload: {
+            slideshow: {
                 options: {
                     slides: "{%= slidesDirectory %}",
                     build: "{%= buildDirectory %}",
@@ -72,10 +72,28 @@ module.exports = function(grunt) {
             reload : {
                 path : 'http://{%= staticHost %}:9001/'
             }
+        },
+
+        build_gh_pages: {
+            ghPages: {
+                options: {
+                    build_branch: "{%= buildBranch %}",
+                    dist: "{%= buildDirectory %}",
+                }
+            }
         }
 
     });
 
-    grunt.registerTask("server", "Build and watch task", ["reveal:livereload", "connect", "open", "watch"]);
-    grunt.registerTask("refresh", "Build and watch task", ["reveal:livereload", "open"]);
+    // To start editing your slideshow using livereload, run "grunt server"
+    grunt.registerTask("server", "Build and watch task", ["reveal:slideshow", "connect", "open", "watch"]);
+
+    // To create a build without livereload, run "grunt build"
+    grunt.registerTask("build", "Build task", ["reveal:slideshow"]);
+
+    // This task is for internal use with watch
+    grunt.registerTask("refresh", "Build and watch task", ["reveal:slideshow", "open"]);
+
+    // To deploy your slideshow to gh-pages, run "grunt deploy"
+    grunt.registerTask("deploy", "Deploy to gh-pages", ["build_gh_pages:ghPages"]);
 };

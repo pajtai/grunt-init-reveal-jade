@@ -1,4 +1,4 @@
 {
-  "lib/name.js": "lib/{%= name %}.js",
-  "test/name_test.js": "test/{%= name %}_test.js"
+  "assets/logo.gif": "{%= assetsDirectory %}/logo.gif",
+  "slides/slides.jade": "{%= slidesDirectory %}/slides.jade"
 }

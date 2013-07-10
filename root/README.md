@@ -1,23 +1,23 @@
-# {%= name %}{% if (travis) { %} [![Build Status](https://secure.travis-ci.org/{%= git_user %}/{%= git_repo %}.png?branch=master)](http://travis-ci.org/{%= git_user %}/{%= git_repo %}){% } %}
+# {%= name %}
 
 {%= description %}
 
 ## Getting Started
-Install the module with: `npm install {%= name %}`
+Install the needed modules with: `npm install`
 
-```javascript
-var {%= js_safe_name %} = require('{%= name %}');
-{%= js_safe_name %}.awesome(); // "awesome"
+## Tasks for your slideshow
+
 ```
+# Edit your slides using live reload
+grunt server
 
-## Documentation
-_(Coming soon)_
+# Create a build of your slides without running the livereload server
+grunt build
 
-## Examples
-_(Coming soon)_
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+# Deploy your slideshow to gh-pages
+# Make sure you have created an orphan gh-pages branch before running this
+grunt deploy
+```
 
 ## Release History
 _(Nothing yet)_

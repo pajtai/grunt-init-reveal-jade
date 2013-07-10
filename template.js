@@ -44,9 +44,9 @@ exports.template = function (grunt, init, done) {
         init.prompt('author_url'),
         init.prompt('node_version', '>= 0.8.19'),
         init.prompt('slidesDirectory', 'slides'),
+        init.prompt('assetsDirectory', 'assets'),
         init.prompt('buildDirectory', 'build'),
         init.prompt('tempDirectory', 'temp'),
-        init.prompt('assetsDirectory', 'assets'),
         init.prompt('cleanBeforeBuild', true),
         init.prompt('slideshowTitle', 'My Title'),
         init.prompt('slideshowAuthor', 'Author'),
@@ -58,6 +58,7 @@ exports.template = function (grunt, init, done) {
         init.prompt('history', true),
         init.prompt('center', true),
         init.prompt('transition', 'default'),
+        init.prompt('orphanBuildBranch', 'gh-pages'),
         // Can also set to, "0.0.0"
         init.prompt('staticHost', 'localhost'),
     ], function (err, props) {
