@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             },
             gruntfile: {
                 files: ['Gruntfile.js'],
-                tasks: ["reveal:livereload", "open"]
+                tasks: ["reveal:slideshow", "open"]
             }
         },
 
