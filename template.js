@@ -69,7 +69,9 @@ exports.template = function (grunt, init, done) {
             "grunt-open"               : "~0.2.0",
             "grunt-contrib-watch"      : "~0.4.4",
             "grunt-contrib-connect"    : "~0.3.0",
-            "grunt-contrib-livereload" : "~0.1.2"
+            "grunt-contrib-livereload" : "~0.1.2",
+            "grunt-build-gh-pages"     : "~0.0.4"
+
         };
 
         // Files to copy (and process).
