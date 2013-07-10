@@ -65,11 +65,11 @@ exports.template = function (grunt, init, done) {
         props.keywords = [];
         props.devDependencies = {
             "matchdep"                 : "~0.1.2",
-            "grunt-reveal-jade"        : "git://github.com/pajtai/grunt-reveal-jade.git#master",
+            "grunt-reveal-jade"        : "~0.0.2",
             "grunt-open"               : "~0.2.0",
             "grunt-contrib-watch"      : "~0.4.4",
             "grunt-contrib-connect"    : "~0.3.0",
-            "grunt-contrib-livereload" : "git://github.com/pajtai/grunt-contrib-livereload.git#multi-write"
+            "grunt-contrib-livereload" : "~0.1.2"
         };
 
         // Files to copy (and process).
