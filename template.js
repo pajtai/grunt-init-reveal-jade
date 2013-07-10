@@ -57,7 +57,9 @@ exports.template = function (grunt, init, done) {
         init.prompt('progress', true),
         init.prompt('history', true),
         init.prompt('center', true),
-        init.prompt('transition', 'default')
+        init.prompt('transition', 'default'),
+        // Can also set to, "0.0.0"
+        init.prompt('staticHost', 'localhost'),
     ], function (err, props) {
         props.keywords = [];
         props.devDependencies = {

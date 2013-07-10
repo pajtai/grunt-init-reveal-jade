@@ -19,22 +19,22 @@ module.exports = function(grunt) {
 
             livereload: {
                 options: {
-                    slides: {%= slidesDirectory %},
-                    build: {%= buildDirectory %},
-                    temp: {%= tempDirectory %},
-                    assets: {%= assetsDirectory %},
+                    slides: "{%= slidesDirectory %}",
+                    build: "{%= buildDirectory %}",
+                    temp: "{%= tempDirectory %}",
+                    assets: "{%= assetsDirectory %}",
                     cleanBuild: {%= cleanBeforeBuild %},
-                    title: {%= slideshowTitle %},
-                    description: {%= slideshowDescription %},
-                    author: {%= slideshowAuthor %},
-                    theme: {%= theme %},
-                    syntax: {%= syntaxHlTheme %},
+                    title: "{%= slideshowTitle %}",
+                    description: "{%= slideshowDescription %}",
+                    author: "{%= slideshowAuthor %}",
+                    theme: "{%= theme %}",
+                    syntax: "{%= syntaxHlTheme %}",
                     controls: {%= controls %},
                     progress: {%= progress %},
                     history: {%= history %},
                     center: {%= center %},
                     // default/cube/page/concave/zoom/linear/none
-                    transition: {%= transition %}
+                    transition: "{%= transition %}"
                 }
             }
         },
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             livereload : {
                 options : {
                     port       : 9001,
-                    hostname: 'localhost',
+                    hostname: '{%= staticHost %}',
                     base       : './build',
                     middleware : function (connect, options) {
                         return [lrSnippet, folderMount(connect, options.base)]
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 
         open : {
             reload : {
-                path : 'http://localhost:9001/'
+                path : 'http://{%= staticHost %}:9001/'
             }
         }
 
