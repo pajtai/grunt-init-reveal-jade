@@ -65,7 +65,7 @@ exports.template = function (grunt, init, done) {
         props.keywords = [];
         props.devDependencies = {
             "matchdep"                 : "~0.1.2",
-            "grunt-reveal-jade"        : "~0.0.2",
+            "grunt-reveal-jade"        : "~0.0.3",
             "grunt-open"               : "~0.2.0",
             "grunt-contrib-watch"      : "~0.4.4",
             "grunt-contrib-connect"    : "~0.3.0",

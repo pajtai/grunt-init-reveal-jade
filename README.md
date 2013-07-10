@@ -32,7 +32,7 @@ path)_
 
 ## Usage
 
-At the command-line, cd into an empty directory, run this command and follow the prompts.
+At the command-line, **cd into an empty directory**, run this command and follow the prompts.
 
 ```
 grunt-init reveal-jade
