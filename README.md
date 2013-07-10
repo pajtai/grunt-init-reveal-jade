@@ -1,4 +1,4 @@
-# grunt-init-node
+# grunt-init-reveal-jade
 
 > Create the project scaffolding for a [RevealJS](https://github.com/hakimel/reveal.js) slideshow with [grunt-init](http://gruntjs.com/project-scaffolding),
 including support for livereload, Jade templating, and deploying your slideshow to gh-pages.
