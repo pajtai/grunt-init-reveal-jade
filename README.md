@@ -1,7 +1,12 @@
 # grunt-init-node
 
-> Create a RevealJS slideshow with [grunt-init](http://gruntjs.com/project-scaffolding),
-including support for livereload.
+> Create the project scaffolding for a [RevealJS](https://github.com/hakimel/reveal.js) slideshow with [grunt-init](http://gruntjs.com/project-scaffolding),
+including support for livereload and Jade templating. 
+
+For more info about the grunt task see:  
+https://github.com/pajtai/grunt-reveal-jade
+
+
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
