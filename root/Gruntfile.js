@@ -42,12 +42,11 @@ module.exports = function(grunt) {
         watch: {
             options: {
                 // Start a live reload server on the default port: 35729
-                livereload: true,
-                nospawn: true
+                livereload: true
             },
             jade: {
                 files: ['{%= slidesDirectory %}/*.jade'],
-                tasks: ["reveal-createBuild", "reveal-deleteTemp"]
+                tasks: ["reveal:slideshow"]
             },
             gruntfile: {
                 files: ['Gruntfile.js'],
