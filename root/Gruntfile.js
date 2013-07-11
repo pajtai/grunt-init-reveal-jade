@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         build_gh_pages: {
             ghPages: {
                 options: {
-                    build_branch: "{%= buildBranch %}",
+                    build_branch: "{%= orphanBuildBranch %}",
                     dist: "{%= buildDirectory %}",
                 }
             }
