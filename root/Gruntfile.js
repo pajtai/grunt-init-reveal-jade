@@ -94,5 +94,5 @@ module.exports = function(grunt) {
     grunt.registerTask("refresh", "Build and watch task", ["reveal:slideshow", "open"]);
 
     // To deploy your slideshow to gh-pages, run "grunt deploy"
-    grunt.registerTask("deploy", "Deploy to gh-pages", ["build_gh_pages:ghPages"]);
+    grunt.registerTask("deploy", "Deploy to gh-pages", ["reveal:slideshow", "build_gh_pages:ghPages"]);
 };
